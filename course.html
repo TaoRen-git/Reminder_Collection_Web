@@ -1,45 +1,83 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="index.css">
-    </head>
-    <body id="home" class="open-left">
-        <div id="offcanvas-left" class="hide">
-            <ul>
-                <li><a href="home.html" >Home </a></li>
-                <li><a href="course.html" >Course </a></li>
-                <li><a href="todo.html" >Todo </a></li>
-                <li><a href="wishlist.html" >Wish list </a></li>
-                <li><a href="anniversary.html" >Anniversary </a></li>
-            </ul>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body id="home" class="open-left">
+    <div id="offcanvas-left" class="hide">
+        <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="course.html">Course </a></li>
+            <li><a href="todo.html">Todo </a></li>
+            <li><a href="wishlist.html">Wish list </a></li>
+            <li><a href="anniversary.html">Anniversary </a></li>
+        </ul>
+    </div>
+    <div class="togglebar">
+        <!-- adds the class of hide to .offcanvas.left -->
+        <div class="toggle" onclick="toggleLeft()">
+            <i>&#9776;</i>
         </div>
-        <div class="togglebar">
-            <!-- adds the class of hide to .offcanvas.left -->
-            <div class="toggle" onclick="toggleLeft()">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
-        <div class="center">
-            <header>
-                <nav>
-                    <ul>
-                        <li><a href="#" >Item 1 </a></li>
-                        <li><a href="#" >Item 1 </a></li>
-                        <li><a href="#" >Item 1 </a></li>
-                    </ul>
-                </nav>
-            </header>
-            <section>
-                <main>
-                    <article>
-                    </article>
-                </main>
-            </section>          
-            <footer>
-            </footer>
-        </div>
-        <script type="text/javascript" src="index.js"></script>
-    </body>
+    </div>
+    <div class="center">
+        <header>
+            Course
+        </header>
+
+        <table style="width:80%">
+            <tr>
+                <th>Course</th>
+                <th>Teacher</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Next Class In</th>
+            </tr>
+            <tr>
+                <td>Math 102</td>
+                <td>Rosen Smith</td>
+                <td>MWF</td>
+                <td>9:00 - 11:00</td>
+                <td>12:34:56</td>
+            </tr>
+            <tr>
+                <td>PHYS 155</td>
+                <td>Ruby James</td>
+                <td>TTh</td>
+                <td>14:00 - 15:00</td>
+                <td>12:34:56</td>
+            </tr>
+            <tr>
+                <td>PSYC 220</td>
+                <td>Ember Lucas</td>
+                <td>MWF</td>
+                <td>13:00 - 15:00</td>
+                <td>12:34:56</td>
+            </tr>
+        </table>
+
+        <form action="">
+            <input type="text" id="course" name="course" value="Course">
+            <input type="text" id="teacher" name="teacher" value="Teacher">
+            <input type="text" id="day" name="day" value="Day">
+            <input type="text" id="time" name="startTime" value="Start Time">
+            <input type="text" id="time" name="endTime" value="End Time">
+            <input type="submit" value="Add course">
+        </form>
+
+        <section>
+            <main>
+                <article>
+                </article>
+            </main>
+        </section>  
+        <footer>
+        </footer>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
 </html>

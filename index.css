@@ -1,37 +1,41 @@
-@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
-
 #home {
     --first-color: rgb(30, 64, 214);
-    --second-color: #ee942c;    
+    --second-color: #ee942c;
     --light-gray: lightgray;
 }
 
-#next {
-    --first-color: tomato;
-    --second-color: deepskyblue;    
-    --light-gray: lightgray;
-}
-html,body {
+html,
+body {
     padding: 0;
     height: 100%;
     margin: 0px;
     overflow: hidden;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-bottom: 0;
     padding-bottom: 0;
     color: var(--first-color);
 }
+
 p {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
 body {
     display: flex;
 }
+
 .wrap {
     left: 280px;
 }
+
 #offcanvas-left,
 #offcanvas-right {
     flex: 0 0 280px;
@@ -39,117 +43,52 @@ body {
     color: white;
     transition-duration: .5s;
 }
+
 #offcanvas-left.hide {
     margin-left: -280px;
 }
+
 #offcanvas-right.hide {
     margin-right: -280px;
 }
+
 .togglebar {
     background-color: #232323;
     flex: 0 0;
     min-width: 50px;
     max-width: 5px;
 }
+
 .toggle i {
     height: 80px;
     font-size: 1.4em;
     width: 100%;
     color: var(--first-color);
-    display: flex;   
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: #111;
 }
+
 .toggle i:hover {
     color: var(--second-color);
-}
-.center {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
-    min-width: 95%;
-}
-.center header {
-    background-color: var(--first-color);
-    color: white;
-}
-header {
-    background-color: blueviolet;
-    flex: 0 0 40px;
-    color: white;
-    
-    /* justify-content: center; */
-    padding: 20px;
-}
-header nav {
-    background-color: transparent;
-}
-header nav ul {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-header nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-}
-.center header nav a:hover {
-    text-decoration: underline
-}
-nav {
-    background-color: #f0f0f0;
-}
-nav ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-
-}
-nav ul li{
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
-    display: inline-flex;
-    padding: 10px;
-}
-nav a {
-    text-decoration: none;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-
-.center section {
-    flex: 1 1 auto;
-    overflow-y: auto;
-}
-
-
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
 }
 
 #offcanvas-left ul,
 #offcanvas-right ul {
     padding: 0
 }
+
 #offcanvas-left ul li,
 #offcanvas-right ul li {
     color: white;
     list-style-type: none;
     padding-left: 0;
     margin-left: 0;
-    padding: 10px; 
+    padding: 10px;
     border-bottom: 1px solid #222
-    
 }
+
 #offcanvas-left a,
 #offcanvas-right a {
     color: white;
@@ -162,15 +101,47 @@ header {
 }
 
 
-footer {
-    display: grid;
-    grid-template-columns: 10% 1fr 1fr 10%;
-    grid-column-gap: 20px;
-    background-color: var(--second-color);
-    flex: 0 0 80px;
-    flex-direction: row;
-    /* padding: 40px 0px; */
+.center {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 95%;
 }
-footer section:first-child {
-    grid-column: 2;
+
+.center header {
+    background-color: var(--first-color);
+    color: white;
+}
+
+header {
+    flex: 0 0 40px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.center section {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.countTime {
+    weight: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-image: url('HomeBackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.countTime div p {
+    font-size: 57px;
+    color: white;
 }
