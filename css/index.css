@@ -1,7 +1,5 @@
 * {
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
+
 }
 
 #home {
@@ -106,12 +104,35 @@ body {
     color: var(--first-color);
 }
 
+#center-home {
+    background-image: url('../images/background-home.jpg');
+}
+
+#center-course {
+    background-image: url('../images/background-course.jpg');
+}
+
+#center-todo {
+    background-image: url('../images/background-todo.jpg');
+}
+
+#center-wishlist {
+    background-image: url('../images/background-wishlist.jpg');
+}
+
+#center-anniversary {
+    background-image: url('../images/background-anniversary.jpg');
+}
 
 .center {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
     min-width: 95%;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .center header {
@@ -141,7 +162,6 @@ header {
     display: flex;
     flex-direction: row;
     text-align: center;
-    background-image: url('../images/homebackground.jpg');
 }
 
 .countTime div p {
