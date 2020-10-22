@@ -1,0 +1,153 @@
+* {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+#home {
+    --first-color: rgb(30, 64, 214);
+    --second-color: #ee942c;
+    --light-gray: lightgray;
+}
+
+html,
+body {
+    padding: 0;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: var(--first-color);
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+body {
+    display: flex;
+}
+
+.wrap {
+    left: 280px;
+}
+
+#offcanvas-left,
+#offcanvas-right {
+    flex: 0 0 280px;
+    background-color: #111;
+    color: white;
+    transition-duration: .5s;
+}
+
+#offcanvas-left.hide {
+    margin-left: -280px;
+}
+
+#offcanvas-right.hide {
+    margin-right: -280px;
+}
+
+.togglebar {
+    background-color: #232323;
+    flex: 0 0;
+    min-width: 50px;
+    max-width: 5px;
+}
+
+.toggle i {
+    height: 80px;
+    font-size: 1.4em;
+    width: 100%;
+    color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+}
+
+.toggle i:hover {
+    color: var(--second-color);
+}
+
+#offcanvas-left ul,
+#offcanvas-right ul {
+    padding: 0
+}
+
+#offcanvas-left ul li,
+#offcanvas-right ul li {
+    color: white;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    padding: 10px;
+    border-bottom: 1px solid #222
+}
+
+#offcanvas-left a,
+#offcanvas-right a {
+    color: white;
+    text-decoration: none;
+}
+
+#offcanvas-left li:hover a,
+#offcanvas-right li:hover a {
+    color: var(--first-color);
+}
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-width: 95%;
+}
+
+.center header {
+    background-color: var(--first-color);
+    color: white;
+}
+
+header {
+    flex: 0 0 40px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.center section {
+    flex: 1 1 auto;
+    overflow-y: auto;
+}
+
+.countTime {
+    weight: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-image: url('../images/homebackground.jpg');
+}
+
+.countTime div p {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    font-family: 'Turret Road', cursive;
+}
