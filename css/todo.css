@@ -2,12 +2,12 @@
     box-sizing: border-box;
 }
 
-#UL {
+#list {
     margin: 0;
     padding: 0;
 }
 
-#UL li {
+#list li {
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -17,21 +17,21 @@
     transition: 0.2s;
 }
 
-#UL li:nth-child(odd) {
+#list li:nth-child(odd) {
     background: #f9f9f9;
 }
 
-#UL li:hover {
+#list li:hover {
     background: #ddd;
 }
 
-#UL li.checked {
+#list li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
 }
 
-#UL li.checked::before {
+#list li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
