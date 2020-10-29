@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(196, 233, 217);
+}
+
+p {
+    margin: 25px;
+    line-height: 30px;
+    font-size: 25px;
+}

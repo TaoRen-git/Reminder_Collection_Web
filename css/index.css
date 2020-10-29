@@ -13,11 +13,6 @@ body {
     overflow: hidden;
 }
 
-p {
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
 body {
     display: flex;
 }
@@ -135,27 +130,6 @@ header {
     justify-content: center;
     font-weight: bold;
     font-size: 60px;
-}
-
-.center section {
-    flex: 1 1 auto;
-    overflow-y: auto;
-}
-
-.countTime {
-    weight: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-
-.countTime div p {
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    margin-top: 0px;
-    font-family: 'Turret Road', cursive;
 }
 
 th {
