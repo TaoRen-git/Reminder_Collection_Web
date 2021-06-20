@@ -8,7 +8,7 @@ Reminders is a web-based event reminder collection that allows users to create r
 
 ### Running the Reminders
 1. Open the **Reminders** folder
-2. Open index.html with browser
+2. Open ```index.html``` with browser
 
 #### Home
 * There are three countdown timer in home page
